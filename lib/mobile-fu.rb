@@ -20,8 +20,8 @@ module MobileFu
       initializer "mobile-fu.action_view" do |app|
         ActiveSupport.on_load :action_view do
           include MobileFu::Helper
-          alias_method :stylesheet_link_tag_without_mobilization, :stylesheet_link_tag
-          alias_method :stylesheet_link_tag, :stylesheet_link_tag_with_mobilization
+          # alias_method :stylesheet_link_tag_without_mobilization, :stylesheet_link_tag
+          # alias_method :stylesheet_link_tag, :stylesheet_link_tag_with_mobilization
         end
       end
     end
